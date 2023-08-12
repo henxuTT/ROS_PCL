@@ -1,0 +1,2 @@
+load_pcl_data
+-DCATKIN_DEVEL_PREFIX=/home/henxu/ROSProjects/ROS_P1/devel -DCMAKE_INSTALL_PREFIX=/home/henxu/ROSProjects/ROS_P1/install -G Unix Makefiles

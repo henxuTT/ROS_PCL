@@ -1,0 +1,8 @@
+<launch>
+    <node pkg="load_pcl_data" type="loadRosbag" name="loadRosbag" output="screen" />
+    <arg name="rviz" default="true" />
+    <group if="$(arg rviz)">
+        <node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz" args="-d $(find load_pcl_data)/rviz_cfg/rviz.rviz" />
+    </group>
+
+</launch>
